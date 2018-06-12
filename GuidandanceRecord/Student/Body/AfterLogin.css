@@ -1,0 +1,90 @@
+.addStudent{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-alignment: center-right;
+    -fx-font-size: 17px;
+    -fx-cursor: hand;
+    -fx-tooltip-visible: true;
+    -fx-font-weight: bold;
+}
+.addStudent:hover{
+    -fx-background-color:  #2196f3;
+}
+#userPicture{
+    -fx-background-color: white;
+        -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0), 6.0, 0.7, 0.0,1.5);
+    -fx-background-radius: 4; -fx-border-radius: 4;
+    -fx-padding: 8;
+}
+#register{
+    -fx-background-color: white;
+    -fx-background-radius: 4; -fx-border-radius: 4;
+    -fx-padding: 8;
+}
+.footerButton{
+    -fx-background-color:  #2196f3;
+    -fx-cursor: hand;
+}
+#combobox{
+    -fx-background-color: white;
+    -fx-cursor: hand;
+    -fx-text-fill: black;
+    -fx-font-size: 17;
+}
+#combobox:hover{
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0), 6.0, 0.7, 0.0,1.5);
+}
+#search{
+    -fx-background-color: white;
+    -fx-font-size: 17;
+}
+#search:hover{
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0), 6.0, 0.7, 0.0,1.5);
+}
+.black{
+    -fx-font-size: 20;
+    -fx-font-family: System;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+
+}
+.blackRight{
+    -fx-font-size: 17;
+    -fx-font-family: System;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
+.blackRights{
+    -fx-font-size: 17;
+    -fx-font-family: Arial;
+    -fx-text-fill: black;
+}
+.table-view{
+    -fx-fill-width: true;
+    -fx-fill-height: true;
+
+}
+.table-view .table-cell{
+    -fx-text-fill: black;
+    -fx-padding: 10px;
+    -fx-font-family: Arial;
+    -fx-table-cell-border-color:transparent;
+}
+.table-view:focused{
+    -fx-border-color: none;
+}
+
+
+.table-view .column-header .label{
+    -fx-padding: 5px;
+    -fx-font-size: 13px;
+}
+
+
+
+.table-row-cell:odd{
+    -fx-background-color:  #D2DEEF;
+}
+.table-view:even{
+    -fx-background-color: #EAEFF7;
+}

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox VBox.vgrow="ALWAYS" alignment="CENTER" prefHeight="447.0" prefWidth="368.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GuidandanceRecord.Student.Body.AfterLogin">
+        <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+                      <ImageView fitHeight="99.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@../../Pictures/user1.png" />
+                          </image>
+                      </ImageView>
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+            <ImageView fitHeight="26.0" fitWidth="43.0" onMouseClicked="#upArrow" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../../Pictures/uparrow.png" />
+                </image>
+         <VBox.margin>
+            <Insets bottom="-10.0" />
+         </VBox.margin>
+            </ImageView>
+      <HBox alignment="CENTER_LEFT" prefHeight="26.0" prefWidth="368.0" style="-fx-background-color: grey;" VBox.vgrow="ALWAYS">
+         <children>
+                  <Label styleClass="blackRight" text="First Name:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+      
+                  <Label fx:id="Firstname" prefHeight="26.0" prefWidth="126.0" style="-fx-background-color: transparent;" styleClass="blackRights" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="368.0" style="-fx-background-color: grey;" VBox.vgrow="ALWAYS">
+         <children>
+                  <Label styleClass="blackRight" text="Last Name:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+                  <Label fx:id="Lastname" prefHeight="26.0" prefWidth="124.0" style="-fx-background-color: transparent;" styleClass="blackRights" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="368.0" style="-fx-background-color: grey;" VBox.vgrow="ALWAYS">
+         <children>
+                  <Label styleClass="blackRight" text="Grade:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+                  <Label fx:id="Grade" prefHeight="26.0" prefWidth="161.0" style="-fx-background-color: transparent;" styleClass="blackRights" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="368.0" style="-fx-background-color: grey;" VBox.vgrow="ALWAYS">
+         <children>
+                  <Label styleClass="blackRight" text="Section:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+                  <Label fx:id="Section" prefHeight="26.0" prefWidth="145.0" style="-fx-background-color: transparent;" styleClass="blackRights" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="15.0" prefWidth="368.0" style="-fx-background-color: grey;" VBox.vgrow="ALWAYS">
+         <children>
+                  <Label styleClass="blackRight" text="Adviser:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+                  <Label fx:id="Adviser" prefHeight="26.0" prefWidth="148.0" style="-fx-background-color: transparent;" styleClass="blackRights" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="368.0" style="-fx-background-color: grey;" VBox.vgrow="ALWAYS">
+         <children>
+                  <Label styleClass="blackRight" text="LRN:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+                  <Label fx:id="Lrn" prefHeight="26.0" prefWidth="178.0" style="-fx-background-color: transparent;" styleClass="blackRights" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="368.0" style="-fx-background-color: grey;" VBox.vgrow="ALWAYS">
+         <children>
+                  <Label styleClass="blackRight" text="GuardianName:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+                  <Label fx:id="Guardian" prefHeight="26.0" prefWidth="189.0" style="-fx-background-color: transparent;" styleClass="blackRights" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="368.0" style="-fx-background-color: grey;" VBox.vgrow="ALWAYS">
+         <children>
+                  <Label styleClass="blackRight" text="GuardianNumber:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+                  <Label fx:id="GuardianNumber" prefHeight="26.0" prefWidth="148.0" style="-fx-background-color: transparent;" styleClass="blackRights" />
+         </children>
+      </HBox>
+        </children>
+</VBox>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="MainParent" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="930.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GuidandanceRecord.Dashboard.dashboard">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <left>
+        <VBox alignment="CENTER_LEFT" prefHeight="515.0" prefWidth="198.0" BorderPane.alignment="CENTER" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+            <children>
+            <VBox fx:id="Vbox_Right" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="71.0" prefWidth="198.0" style="-fx-background-color: #0b7dda;" VBox.vgrow="NEVER">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <Label text="Balanti Elemtary">
+                     <font>
+                        <Font name="Arial Bold" size="22.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="School">
+                     <font>
+                        <Font name="Arial Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER_LEFT" onMouseEntered="#Hb1Enter" onMouseExited="#Hb1Exit" prefHeight="59.0" prefWidth="198.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+               <children>
+                  <Pane fx:id="Account_Table_Button" onMouseClicked="#Account_Table" prefHeight="43.0" prefWidth="33.0" style="-fx-background-color: #0a6fc2;" />
+                  <Label fx:id="Account_Table_Label" prefHeight="26.0" prefWidth="155.0" style="-fx-text-fill: black;" text="Account Table">
+                     <font>
+                        <Font name="Arial Bold" size="22.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+                <HBox alignment="CENTER_LEFT" onMouseEntered="#Hb2Enter" onMouseExited="#Hb2Exit" prefHeight="59.0" prefWidth="198.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+               <Pane fx:id="Add_Account_Button" onMouseClicked="#Add_Account" prefHeight="43.0" prefWidth="33.0" style="-fx-background-color: #0a6fc2;" />
+                        <Label fx:id="Add_Account_Label" prefHeight="26.0" prefWidth="155.0" style="-fx-text-fill: black;" text="Add Account">
+                            <font>
+                                <Font name="Arial Bold" size="22.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Label>
+
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" onMouseEntered="#Hb3Enter" onMouseExited="#Hb3Exit" prefHeight="59.0" prefWidth="198.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+                    <children>
+                  <Pane fx:id="Student_Table_Button" onMouseClicked="#Student_Table" prefHeight="43.0" prefWidth="33.0" style="-fx-background-color: #0a6fc2;" />
+                        <Label fx:id="Student_Table_Label" prefWidth="155.0" style="-fx-text-fill: black;" text="Student Table">
+                            <font>
+                                <Font name="Arial Bold" size="22.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" onMouseEntered="#Hb4Enter" onMouseExited="#Hb4Exit" prefHeight="59.0" prefWidth="198.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+                    <children>
+                  <Pane fx:id="Add_Student_Button" onMouseClicked="#Add_Student" prefHeight="43.0" prefWidth="33.0" style="-fx-background-color: #0a6fc2;" />
+                        <Label fx:id="Add_Student_Label" prefWidth="155.0" style="-fx-text-fill: black;" text="Add Student">
+                            <font>
+                                <Font name="Arial Bold" size="22.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" onMouseEntered="#Hb5Enter" onMouseExited="#Hb5Exit" prefHeight="59.0" prefWidth="198.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+                    <children>
+                  <Pane fx:id="Message_Button" onMouseClicked="#Message_Button" prefHeight="43.0" prefWidth="33.0" style="-fx-background-color: #0a6fc2;" />
+                        <Label fx:id="Message_Label" prefWidth="155.0" style="-fx-text-fill: black;" text="Message">
+                            <font>
+                                <Font name="Arial Bold" size="22.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" onMouseEntered="#Hb6Enter" onMouseExited="#Hb6Exit" prefHeight="59.0" prefWidth="198.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+                    <children>
+                  <Pane fx:id="Guidance_Button" onMouseClicked="#Guidance" prefHeight="43.0" prefWidth="33.0" style="-fx-background-color: #0a6fc2;" />
+                        <Label fx:id="Guidance_Label" prefWidth="155.0" style="-fx-text-fill: black;" text="Login History">
+                            <font>
+                                <Font name="Arial Bold" size="22.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" onMouseEntered="#Hb7Enter" onMouseExited="#Hb7Exit" prefHeight="59.0" prefWidth="198.0" style="-fx-background-color: white;">
+                    <children>
+                  <Pane fx:id="Record_Button" onMouseClicked="#Home" prefHeight="43.0" prefWidth="33.0" style="-fx-background-color: #0a6fc2;" />
+                        <Label fx:id="Record_Label" prefWidth="155.0" style="-fx-text-fill: black;" text="Home">
+                            <font>
+                                <Font name="Arial Bold" size="22.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseEntered="#Hb8Enter" onMouseExited="#Hb8Exit" prefHeight="59.0" prefWidth="198.0" style="-fx-background-color: white;">
+               <children>
+                  <Pane fx:id="Setting_Button" onMouseClicked="#Setting" prefHeight="43.0" prefWidth="33.0" style="-fx-background-color: #0a6fc2;" />
+                  <Label fx:id="Setting_Label" prefWidth="155.0" style="-fx-text-fill: black;" text="Settings">
+                     <font>
+                        <Font name="Arial Bold" size="22.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+            </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+        </VBox>
+    </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+
+            <HBox alignment="CENTER_RIGHT" prefHeight="71.0" prefWidth="732.0" style="-fx-background-color: #0b7dda;">
+            <TextField prefHeight="32.0" prefWidth="302.0" style="-fx-border-radius: 20;" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </HBox.margin>
+            </TextField>
+            <JFXButton prefHeight="29.0" prefWidth="89.0" style="-fx-background-color: #5cb85c;" text="Search">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </JFXButton>
+            <ImageView fitHeight="97.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/user1.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <VBox alignment="CENTER_LEFT">
+               <children>
+      
+                                          <Label prefHeight="30.0" prefWidth="158.0" style="-fx-text-fill: black;" text="Kurt Lupin Orioque">
+                           <font>
+                              <Font name="Bell MT" size="19.0" />
+                           </font>
+                        </Label>
+                  <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="User">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="71.0" prefWidth="0.0" />
+
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" right="20.0" />
+               </padding>
+            </HBox>
+         <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+            <children>
+               <VBox fx:id="Vbox_Change" prefHeight="436.0" prefWidth="712.0" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS">
+                  <HBox.margin>
+                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                  </HBox.margin>
+               </VBox>
+            </children>
+            <VBox.margin>
+               <Insets />
+            </VBox.margin>
+         </HBox>
+
+      </VBox>
+   </center>
+</BorderPane>

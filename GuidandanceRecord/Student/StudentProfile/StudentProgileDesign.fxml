@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<HBox prefHeight="438.0" prefWidth="1277.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GuidandanceRecord.Student.StudentProfile.StudentProfile">
+    <children>
+        <VBox alignment="CENTER" prefHeight="458.0" prefWidth="143.0" style="-fx-background-color: #0a6fc2;">
+            <children>
+                <HBox alignment="CENTER" prefHeight="124.0" prefWidth="146.0">
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </VBox.margin>
+                    <children>
+                    <ImageView fitHeight="109.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                        <Image url="@../../Pictures/StudentsIcon.png" />
+                        </image>
+                    </ImageView></children>
+                </HBox>
+            </children>
+        </VBox>
+        <VBox prefHeight="438.0" prefWidth="993.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+            <children>
+                <HBox prefHeight="206.0" prefWidth="660.0">
+                    <children>
+                    <VBox prefHeight="206.0" prefWidth="527.0">
+                        <children>
+                    <HBox>
+                        <VBox.margin>
+                            <Insets top="10.0" />
+                        </VBox.margin>
+                        <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Student Information:">
+                            <font>
+                        <Font name="Arial Bold" size="17.0" />
+                        </font>
+                        </Text>
+                        </children>
+                    </HBox>
+                            <HBox>
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                    </VBox.margin>
+                                <children>
+                    <Label prefHeight="25.0" prefWidth="92.0" style="-fx-text-fill: black;" text="First Name:">
+                        <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font></Label><JFXTextField fx:id="First_Name" editable="false" opacity="0.9" style="-fx-text-fill: black;" unFocusColor="BLACK">
+                        <font>
+                            <Font name="Arial" size="12.0" />
+                        </font>
+                            </JFXTextField>
+                            </children>
+                            </HBox>
+                    <HBox>
+                        <VBox.margin>
+                            <Insets bottom="10.0" left="10.0" />
+                    </VBox.margin>
+                        <children>
+                        <Label prefHeight="25.0" prefWidth="92.0" style="-fx-text-fill: black;" text="Last Name:">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <JFXTextField fx:id="Last_Name" editable="false" opacity="0.9" style="-fx-text-fill: black;" unFocusColor="BLACK" />
+                    </children>
+                    </HBox>
+                            <HBox>
+                                <VBox.margin><Insets bottom="10.0" left="10.0" />
+                        </VBox.margin>
+                    <children><Label prefHeight="25.0" prefWidth="92.0" style="-fx-text-fill: black;" text="NickName:">
+                        <font>
+                        <Font name="System Bold" size="16.0" />
+                        </font>
+                    </Label>
+                        <JFXTextField fx:id="NickName" editable="false" opacity="0.9" style="-fx-text-fill: black;" unFocusColor="BLACK" />
+                    </children>
+                        </HBox>
+                            <HBox prefHeight="25.0" prefWidth="246.0"><VBox.margin><Insets bottom="10.0" left="10.0" />
+                </VBox.margin>
+                            <children>
+                                <Label prefHeight="25.0" prefWidth="92.0" style="-fx-text-fill: black;" text="BirthDate:">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                        </Label>
+                            <JFXTextField fx:id="BirthDate" editable="false" opacity="0.9" style="-fx-text-fill: black;" unFocusColor="BLACK" />
+                </children>
+                        </HBox>
+                            <HBox>
+                            <children>
+                                <Label prefHeight="25.0" prefWidth="92.0" style="-fx-text-fill: black;" text="Age:">
+                    <font>
+                        <Font name="System Bold" size="16.0" /></font></Label><JFXTextField fx:id="Age" editable="false" opacity="0.9" style="-fx-text-fill: black;" unFocusColor="BLACK" />
+                </children>
+                            <VBox.margin><Insets left="10.0" />
+                            </VBox.margin>
+                        </HBox>
+                        </children>
+                        <HBox.margin>
+                    <Insets />
+                    </HBox.margin>
+                    </VBox>
+                        <VBox prefHeight="206.0" prefWidth="569.0">
+                            <children>
+                                <HBox alignment="CENTER_RIGHT" prefHeight="13.0" prefWidth="329.0">
+                                    <VBox.margin>
+                                        <Insets />
+                                    </VBox.margin>
+                                    <children>
+                                        <Text fill="#0a6fc2" onMouseClicked="#Edit_Button" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit">
+                                            <font>
+                                                <Font name="Arial Bold" size="18.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets right="40.0" top="10.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                                        <Text fill="#0a6fc2" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete">
+                                            <font>
+                                                <Font name="Arial Bold" size="18.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets right="40.0" top="10.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                                <HBox>
+                                    <children>
+                                        <Label prefHeight="25.0" prefWidth="145.0" style="-fx-text-fill: black;" text="Mother Name:">
+                                            <font>
+                                                <Font name="System Bold" size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <JFXTextField fx:id="Mother_Name" editable="false" mouseTransparent="true" prefHeight="23.0" prefWidth="151.0" style="-fx-text-fill: black;" unFocusColor="BLACK">
+                                            <font>
+                                                <Font name="Arial" size="12.0" />
+                                            </font>
+                                        </JFXTextField>
+                                    </children>
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" top="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                                <HBox>
+                                    <children>
+                                        <Label prefHeight="25.0" prefWidth="145.0" style="-fx-text-fill: black;" text="Occupation:">
+                                            <font>
+                                                <Font name="System Bold" size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <JFXTextField fx:id="Occupation1" editable="false" mouseTransparent="true" opacity="0.9" prefHeight="23.0" prefWidth="151.0" style="-fx-text-fill: black;" unFocusColor="BLACK">
+                                            <font>
+                                                <Font name="Arial" size="12.0" />
+                                            </font>
+                                        </JFXTextField>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                                <HBox>
+                                    <children>
+                                        <Label prefHeight="25.0" prefWidth="145.0" style="-fx-text-fill: black;" text="Father's Name:">
+                                            <font>
+                                                <Font name="System Bold" size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <JFXTextField fx:id="Father_Name" editable="false" mouseTransparent="true" opacity="0.9" prefHeight="23.0" prefWidth="151.0" style="-fx-text-fill: black;" unFocusColor="BLACK">
+                                            <font>
+                                                <Font name="Arial" size="12.0" />
+                                            </font>
+                                        </JFXTextField>
+                                    </children>
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                                <HBox>
+                                    <children>
+                                        <Label prefHeight="25.0" prefWidth="145.0" style="-fx-text-fill: black;" text="Occupation:">
+                                            <font>
+                                                <Font name="System Bold" size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <JFXTextField fx:id="Occupation" editable="false" opacity="0.9" prefHeight="23.0" prefWidth="151.0" style="-fx-text-fill: black;" unFocusColor="BLACK">
+                                            <font>
+                                                <Font name="Arial" size="12.0" />
+                                            </font>
+                                        </JFXTextField>
+                                    </children>
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                                <HBox>
+                                    <children>
+                                        <Label prefHeight="25.0" prefWidth="145.0" style="-fx-text-fill: black;" text="Guardian Name:">
+                                            <font>
+                                                <Font name="System Bold" size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <JFXTextField fx:id="Guardian_Name" editable="false" mouseTransparent="true" opacity="0.9" prefHeight="23.0" prefWidth="151.0" style="-fx-text-fill: black;" unFocusColor="BLACK">
+                                            <font>
+                                                <Font name="Arial" size="12.0" />
+                                            </font>
+                                        </JFXTextField>
+                                    </children>
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                </HBox>
+                            </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                        </VBox>
+                  <HBox prefHeight="206.0" prefWidth="699.0" style="-fx-background-color: transparent;">
+                     <children>
+                        <VBox prefHeight="206.0" prefWidth="408.0">
+                           <children>
+                              <HBox>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Information:">
+                                       <font>
+                                          <Font name="Arial Bold" size="17.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <HBox>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="12.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label prefHeight="25.0" prefWidth="103.0" style="-fx-text-fill: black;" text="Address:">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="Street" editable="false" mouseTransparent="true" promptText="Street" style="-fx-text-fill: black;" unFocusColor="BLACK">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="Barangay" editable="false" mouseTransparent="true" promptText="Barangay" style="-fx-text-fill: black;" unFocusColor="BLACK">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="Province" editable="false" mouseTransparent="true" promptText="Province/ States" style="-fx-text-fill: black;" unFocusColor="BLACK">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </JFXTextField>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </HBox>
+                              <HBox>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="10.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label prefHeight="25.0" prefWidth="139.0" style="-fx-text-fill: black;" text="Guardian Contact:">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="Guardian_Contact" editable="false" mouseTransparent="true" style="-fx-text-fill: black;" unFocusColor="BLACK" />
+                                 </children>
+                              </HBox>
+                              <HBox>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="10.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label prefHeight="25.0" prefWidth="139.0" style="-fx-text-fill: black;" text="Contact Number:">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="Contact_Number" editable="false" mouseTransparent="true" style="-fx-text-fill: black;" unFocusColor="BLACK" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="25.0" prefWidth="246.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label prefHeight="25.0" prefWidth="139.0" style="-fx-text-fill: black;" text="Email Address:">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="Email_Address" editable="false" mouseTransparent="true" style="-fx-text-fill: black;" unFocusColor="BLACK" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                </HBox>
+                <HBox alignment="BOTTOM_LEFT" prefHeight="373.0" prefWidth="446.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <VBox prefHeight="284.0" prefWidth="277.0">
+                            <children>
+                                <HBox style="-fx-background-color: transparent;">
+                                    <VBox.margin>
+                                        <Insets top="10.0" />
+                                    </VBox.margin>
+                                    <children>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Guidance Offense Record:">
+                                            <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="319.0">
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                                    </VBox.margin>
+                                    <children>
+                                        <Label prefHeight="25.0" prefWidth="92.0" style="-fx-text-fill: black;" text="Offense 1:">
+                                            <font>
+                                                <Font name="System Bold" size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <JFXRadioButton fx:id="Offense1_Rd" disable="true" prefHeight="17.0" prefWidth="35.0" />
+                                        <JFXRadioButton fx:id="Offense1_Rd1" disable="true" />
+                                        <JFXRadioButton fx:id="Offense1_Rd2" disable="true" />
+                                        <ImageView fx:id="Offense1_Add_Sign" fitHeight="15.0" fitWidth="15.0" onMouseClicked="#Offense1_Add_Sign" pickOnBounds="true" preserveRatio="true" visible="false" HBox.hgrow="ALWAYS">
+                                            <image>
+                                                <Image url="@../../Pictures/add.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="10.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                        <ImageView fx:id="Offense1_Minus_Sign" fitHeight="21.0" fitWidth="15.0" onMouseClicked="#Offense1_Minus_Sign" pickOnBounds="true" preserveRatio="true" visible="false" HBox.hgrow="ALWAYS">
+                                            <image>
+                                                <Image url="@../../Pictures/mathematics.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="10.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" style="-fx-background-color: transparent;">
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" left="10.0" />
+                                    </VBox.margin>
+                                    <children>
+                                        <Label prefHeight="25.0" prefWidth="92.0" style="-fx-text-fill: black;" text="Offense 2:">
+                                            <font>
+                                                <Font name="System Bold" size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <JFXRadioButton fx:id="Offense2_Rd" disable="true" prefHeight="17.0" prefWidth="35.0" />
+                                        <JFXRadioButton fx:id="Offense2_Rd1" disable="true" />
+                                        <JFXRadioButton fx:id="Offense2_Rd2" disable="true" />
+                                        <ImageView fx:id="Offense2_Add_Sign" fitHeight="15.0" fitWidth="15.0" onMouseClicked="#Offense2_Add_Sign" pickOnBounds="true" preserveRatio="true" visible="false">
+                                            <image>
+                                                <Image url="@../../Pictures/add.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="10.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                        <ImageView fx:id="Offense2_Minus_Sign" fitHeight="21.0" fitWidth="15.0" onMouseClicked="#Offense2_Minus_Sign" pickOnBounds="true" preserveRatio="true" visible="false">
+                                            <image>
+                                                <Image url="@../../Pictures/mathematics.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="10.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" style="-fx-background-color: transparent;">
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" left="10.0" />
+                                    </VBox.margin>
+                                    <children>
+                                        <Label prefHeight="25.0" prefWidth="92.0" style="-fx-text-fill: black;" text="Offense 3:">
+                                            <font>
+                                                <Font name="System Bold" size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <JFXRadioButton fx:id="Offense3_Rd" disable="true" prefHeight="17.0" prefWidth="35.0" />
+                                        <JFXRadioButton fx:id="Offense3_Rd1" disable="true" />
+                                        <JFXRadioButton fx:id="Offense3_Rd2" disable="true" />
+                                        <ImageView fx:id="Offense3_Add_Sign" fitHeight="15.0" fitWidth="15.0" onMouseClicked="#Offense3_Add_Sign" pickOnBounds="true" preserveRatio="true" visible="false">
+                                            <image>
+                                                <Image url="@../../Pictures/add.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="10.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                        <ImageView fx:id="Offense3_Minus_Sign" fitHeight="21.0" fitWidth="15.0" onMouseClicked="#Offense3_Minus_Sign" pickOnBounds="true" preserveRatio="true" visible="false">
+                                            <image>
+                                                <Image url="@../../Pictures/mathematics.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="10.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="246.0" style="-fx-background-color: transparent;">
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" left="10.0" />
+                                    </VBox.margin>
+                                    <children>
+                                        <Label prefHeight="25.0" prefWidth="92.0" style="-fx-text-fill: black;" text="Offense 4:">
+                                            <font>
+                                                <Font name="System Bold" size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <JFXRadioButton fx:id="Offense4_Rd" disable="true" prefHeight="17.0" prefWidth="35.0" />
+                                        <JFXRadioButton fx:id="Offense4_Rd1" disable="true" />
+                                        <JFXRadioButton fx:id="Offense4_Rd2" disable="true" />
+                                        <ImageView fx:id="Offense4_Add_Sign" fitHeight="15.0" fitWidth="15.0" onMouseClicked="#Offense4_Add_Sign" pickOnBounds="true" preserveRatio="true" visible="false">
+                                            <image>
+                                                <Image url="@../../Pictures/add.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="10.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                        <ImageView fx:id="Offense4_Minus_Sign" fitHeight="21.0" fitWidth="15.0" onMouseClicked="#Offense4_Minus_Sign" pickOnBounds="true" preserveRatio="true" visible="false">
+                                            <image>
+                                                <Image url="@../../Pictures/mathematics.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="10.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" style="-fx-background-color: transparent;">
+                                    <children>
+                                        <Label prefHeight="25.0" prefWidth="92.0" style="-fx-text-fill: black;" text="Offense 5:">
+                                            <font>
+                                                <Font name="System Bold" size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <JFXRadioButton fx:id="Offense5_Rd" disable="true" prefHeight="17.0" prefWidth="35.0" />
+                                        <JFXRadioButton fx:id="Offense5_Rd1" disable="true" />
+                                        <JFXRadioButton fx:id="Offense5_Rd2" disable="true" />
+                                        <ImageView fx:id="Offense5_Add_Sign" fitHeight="15.0" fitWidth="15.0" onMouseClicked="#Offense5_Add_Sign" pickOnBounds="true" preserveRatio="true" visible="false">
+                                            <image>
+                                                <Image url="@../../Pictures/add.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="10.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                        <ImageView fx:id="Offense5_Minus_Sign" fitHeight="21.0" fitWidth="15.0" onMouseClicked="#Offense5_Minus_Sign" pickOnBounds="true" preserveRatio="true" visible="false">
+                                            <image>
+                                                <Image url="@../../Pictures/mathematics.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="10.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets left="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                            </children>
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </VBox>
+                        <VBox prefHeight="284.0" prefWidth="273.0">
+                            <children>
+                                <HBox alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="295.0" style="-fx-background-color: transparent;">
+                                    <VBox.margin>
+                                        <Insets />
+                                    </VBox.margin>
+                                    <children>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="295.0">
+                                    <children>
+                                        <Label prefHeight="25.0" prefWidth="92.0" style="-fx-text-fill: black;" text="Offense 6:">
+                                            <font>
+                                                <Font name="System Bold" size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <JFXRadioButton fx:id="Offense6_Rd" disable="true" prefHeight="17.0" prefWidth="35.0" />
+                                        <JFXRadioButton fx:id="Offense6_Rd1" disable="true" />
+                                        <JFXRadioButton fx:id="Offense6_Rd2" disable="true" />
+                                        <ImageView fx:id="Offense6_Add_Sign" fitHeight="15.0" fitWidth="15.0" onMouseClicked="#Offense6_Add_Sign" pickOnBounds="true" preserveRatio="true" visible="false">
+                                            <image>
+                                                <Image url="@../../Pictures/add.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="10.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                        <ImageView fx:id="Offense6_Minus_Sign" fitHeight="21.0" fitWidth="15.0" onMouseClicked="#Offense6_Minus_Sign" pickOnBounds="true" preserveRatio="true" visible="false">
+                                            <image>
+                                                <Image url="@../../Pictures/mathematics.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="10.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" top="23.0" />
+                                    </VBox.margin>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" style="-fx-background-color: transparent;">
+                                    <children>
+                                        <Label prefHeight="25.0" prefWidth="92.0" style="-fx-text-fill: black;" text="Offense 7:">
+                                            <font>
+                                                <Font name="System Bold" size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <JFXRadioButton fx:id="Offense7_Rd" disable="true" prefHeight="17.0" prefWidth="35.0" />
+                                        <JFXRadioButton fx:id="Offense7_Rd1" disable="true" />
+                                        <JFXRadioButton fx:id="Offense7_Rd2" disable="true" />
+                                        <ImageView fx:id="Offense7_Add_Sign" fitHeight="15.0" fitWidth="15.0" onMouseClicked="#Offense7_Add_Sign" pickOnBounds="true" preserveRatio="true" visible="false">
+                                            <image>
+                                                <Image url="@../../Pictures/add.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="10.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                        <ImageView fx:id="Offense7_Minus_Sign" fitHeight="21.0" fitWidth="15.0" onMouseClicked="#Offense7_Minus_Sign" pickOnBounds="true" preserveRatio="true" visible="false">
+                                            <image>
+                                                <Image url="@../../Pictures/mathematics.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="10.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                    </children>
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" style="-fx-background-color: transparent;">
+                                    <children>
+                                        <Label prefHeight="25.0" prefWidth="92.0" style="-fx-text-fill: black;" text="Offense 8:">
+                                            <font>
+                                                <Font name="System Bold" size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <JFXRadioButton fx:id="Offense8_Rd" disable="true" prefHeight="17.0" prefWidth="35.0" />
+                                        <JFXRadioButton fx:id="Offense8_Rd1" disable="true" />
+                                        <JFXRadioButton fx:id="Offense8_Rd2" disable="true" />
+                                        <ImageView fx:id="Offense8_Add_Sign" fitHeight="15.0" fitWidth="15.0" onMouseClicked="#Offense8_Add_Sign" pickOnBounds="true" preserveRatio="true" visible="false">
+                                            <image>
+                                                <Image url="@../../Pictures/add.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="10.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                        <ImageView fx:id="Offense8_Minus_Sign" fitHeight="21.0" fitWidth="15.0" onMouseClicked="#Offense8_Minus_Sign" pickOnBounds="true" preserveRatio="true" visible="false">
+                                            <image>
+                                                <Image url="@../../Pictures/mathematics.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="10.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                    </children>
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" style="-fx-background-color: transparent;">
+                                    <children>
+                                        <Label prefHeight="25.0" prefWidth="92.0" style="-fx-text-fill: black;" text="Offense 9:">
+                                            <font>
+                                                <Font name="System Bold" size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <JFXRadioButton fx:id="Offense9_Rd" disable="true" prefHeight="17.0" prefWidth="35.0" />
+                                        <JFXRadioButton fx:id="Offense9_Rd1" disable="true" />
+                                        <JFXRadioButton fx:id="Offense9_Rd2" disable="true" />
+                                        <ImageView fx:id="Offense9_Add_Sign" fitHeight="15.0" fitWidth="15.0" onMouseClicked="#Offense9_Add_Sign" pickOnBounds="true" preserveRatio="true" visible="false">
+                                            <image>
+                                                <Image url="@../../Pictures/add.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="10.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                        <ImageView fx:id="Offense9_Minus_Sign" fitHeight="21.0" fitWidth="15.0" onMouseClicked="#Offense9_Minus_Sign" pickOnBounds="true" preserveRatio="true" visible="false">
+                                            <image>
+                                                <Image url="@../../Pictures/mathematics.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="10.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                    </children>
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" style="-fx-background-color: transparent;">
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                    <children>
+                                        <Label prefHeight="25.0" prefWidth="92.0" style="-fx-text-fill: black;" text="Offense 10:">
+                                            <font>
+                                                <Font name="System Bold" size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <JFXRadioButton fx:id="Offense10_Rd" disable="true" prefHeight="17.0" prefWidth="35.0" />
+                                        <JFXRadioButton fx:id="Offense10_Rd1" disable="true" />
+                                        <JFXRadioButton fx:id="Offense10_Rd2" disable="true" />
+                                        <ImageView fx:id="Offense10_Add_Sign" fitHeight="15.0" fitWidth="15.0" onMouseClicked="#Offense10_Add_Sign" pickOnBounds="true" preserveRatio="true" visible="false">
+                                            <image>
+                                                <Image url="@../../Pictures/add.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="10.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                        <ImageView fx:id="Offense10_Minus_Sign" fitHeight="21.0" fitWidth="15.0" onMouseClicked="#Offense10_Minus_Sign" pickOnBounds="true" preserveRatio="true" visible="false">
+                                            <image>
+                                                <Image url="@../../Pictures/mathematics.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="10.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                            </children>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <HBox.margin>
+                                <Insets left="40.0" />
+                            </HBox.margin>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="254.0" prefWidth="351.0">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Guidance Requirments:">
+                                    <font>
+                                        <Font name="Arial Bold" size="17.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets top="10.0" />
+                                    </VBox.margin>
+                                </Text>
+                                <HBox alignment="CENTER_LEFT">
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                                    </VBox.margin>
+                                    <children>
+                                        <Label prefHeight="25.0" prefWidth="138.0" style="-fx-text-fill: black;" text="Good Moral:">
+                                            <font>
+                                                <Font name="System Bold" size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="Good_Moral" prefHeight="17.0" prefWidth="127.0" text="InComplete">
+                                            <font>
+                                                <Font name="Arial" size="15.0" />
+                                            </font>
+                                 <HBox.margin>
+                                    <Insets left="45.0" />
+                                 </HBox.margin>
+                                        </Label>
+                                        <ImageView fx:id="Good_Moral_Check_Sign" onMouseClicked="#Good_Moral_Check_Sign" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                            <image>
+                                                <Image url="@../../Pictures/icons8-checkmark-50.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="28.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                        <ImageView fx:id="Good_Moral_X_Sign" onMouseClicked="#Good_Moral_X_Sign" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                            <image>
+                                                <Image url="@../../Pictures/x.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="20.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT">
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" left="10.0" />
+                                    </VBox.margin>
+                                    <children>
+                                        <Label prefHeight="25.0" prefWidth="81.0" style="-fx-text-fill: black;" text="Form 137:">
+                                            <font>
+                                                <Font name="System Bold" size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="Form_137" prefHeight="17.0" prefWidth="103.0" text="InComplete">
+                                            <font>
+                                                <Font name="Arial" size="15.0" />
+                                            </font>
+                                 <HBox.margin>
+                                    <Insets left="80.0" right="10.0" />
+                                 </HBox.margin>
+                                        </Label>
+                                        <ImageView fx:id="Form_137_Check_Sign" onMouseClicked="#Form_137_Check_Sign" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                            <image>
+                                                <Image url="@../../Pictures/icons8-checkmark-50.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="20.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                        <ImageView fx:id="Form_137_X_Sign" onMouseClicked="#Form_137_x_Sign" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                            <image>
+                                                <Image url="@../../Pictures/x.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="20.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="246.0">
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" left="10.0" />
+                                    </VBox.margin>
+                                    <children>
+                                        <Label prefHeight="25.0" prefWidth="64.0" style="-fx-text-fill: black;" text="Picture:">
+                                            <font>
+                                                <Font name="System Bold" size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="Picture" prefHeight="17.0" prefWidth="103.0" text="Complete!">
+                                            <font>
+                                                <Font name="Arial" size="15.0" />
+                                            </font>
+                                 <HBox.margin>
+                                    <Insets left="100.0" />
+                                 </HBox.margin>
+                                        </Label>
+                                        <ImageView fx:id="Picture_Check_Sign" onMouseClicked="#Picture_Check_Sign" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                            <image>
+                                                <Image url="@../../Pictures/icons8-checkmark-50.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="28.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                        <ImageView fx:id="Picture_X_Sign" onMouseClicked="#Picture_X_Sign" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                            <image>
+                                                <Image url="@../../Pictures/x.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="20.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT">
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" left="10.0" />
+                                    </VBox.margin>
+                                    <children>
+                                        <Label prefHeight="25.0" prefWidth="164.0" style="-fx-text-fill: black;" text="Birth Certificate/Nso:">
+                                            <font>
+                                                <Font name="System Bold" size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="Nso" prefHeight="17.0" prefWidth="103.0" text="Complete!" HBox.hgrow="ALWAYS">
+                                            <font>
+                                                <Font name="Arial" size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <ImageView fx:id="Birth_Check_Sign" onMouseClicked="#Birth_Check_Sign" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                            <image>
+                                                <Image url="@../../Pictures/icons8-checkmark-50.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="28.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                        <ImageView fx:id="Birth_X_Sign" onMouseClicked="#Birth_X_Sign" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                            <image>
+                                                <Image url="@../../Pictures/x.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="20.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                            </children>
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                        </VBox>
+                  <Text fx:id="Done_Text" fill="#0a6fc2" onMouseClicked="#Edit_Button" strokeType="OUTSIDE" strokeWidth="0.0" text="Done" visible="false">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="50.0" />
+                     </HBox.margin>
+                  </Text>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+
+</HBox>

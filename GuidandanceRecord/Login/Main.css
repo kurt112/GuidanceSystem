@@ -1,0 +1,7 @@
+#anchorPaneChildren{
+    fx-background-color: red;
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0), 6.0, 0.7, 0.0,1.5);
+    -fx-background-radius: 4;
+    -fx-border-radius: 4;
+    -fx-padding: 8;
+}

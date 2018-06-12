@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="TOP_CENTER" prefHeight="537.0" prefWidth="592.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GuidandanceRecord.Account.UpdateAccount.UpdateAccount">
+    <children>
+        <HBox alignment="CENTER" prefHeight="75.0" prefWidth="555.0" style="-fx-background-color: #0b7dda; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0), 6.0, 0.1, 0.0,1.5);">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Update Here">
+                    <font>
+                        <Font name="Arial Bold" size="39.0" />
+                    </font>
+                </Text>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="454.0" prefWidth="585.0">
+            <children>
+                <VBox alignment="TOP_CENTER" prefHeight="387.0" prefWidth="383.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0), 6.0, 0.1, 0.0,1.5);">
+                    <children>
+                        <HBox alignment="CENTER">
+                            <children>
+                                <JFXTextField fx:id="firstName" focusColor="BLACK" labelFloat="true" maxWidth="316.0" minWidth="222.0" prefHeight="31.0" prefWidth="222.0" promptText="First Name">
+                                    <font>
+                                        <Font name="Roboto Medium" size="14.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </JFXTextField>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="10.0" top="20.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER">
+                            <children>
+                                <JFXTextField fx:id="lastName" labelFloat="true" maxWidth="316.0" minWidth="222.0" prefHeight="31.0" prefWidth="222.0" promptText="Last Name">
+                                    <font>
+                                        <Font name="Roboto Medium" size="14.0" />
+                                    </font>
+                                </JFXTextField>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="10.0" top="10.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER">
+                            <children>
+                                <JFXTextField fx:id="userName" focusColor="BLACK" labelFloat="true" maxWidth="316.0" minWidth="222.0" prefHeight="31.0" prefWidth="222.0" promptText="User Name">
+                                    <font>
+                                        <Font name="Roboto Medium" size="14.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </JFXTextField>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="10.0" top="10.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER">
+                            <children>
+                                <JFXPasswordField fx:id="Password" focusColor="BLACK" labelFloat="true" maxWidth="316.0" minWidth="222.0" prefHeight="31.0" prefWidth="222.0" promptText="Enter password">
+                                    <font>
+                                        <Font name="Roboto Medium" size="14.0" />
+                                    </font>
+                                </JFXPasswordField>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="20.0" top="10.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER">
+                            <children>
+                                <JFXPasswordField fx:id="Re_enterPassword" focusColor="BLACK" labelFloat="true" maxWidth="316.0" minWidth="222.0" prefHeight="31.0" prefWidth="222.0" promptText="Re-Enter password">
+                                    <font>
+                                        <Font name="Roboto Medium" size="14.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </JFXPasswordField>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="10.0" top="10.0" />
+                            </VBox.margin>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </HBox>
+                        <HBox alignment="CENTER">
+                            <children>
+                                <JFXTextField fx:id="Number" focusColor="BLACK" labelFloat="true" prefHeight="31.0" prefWidth="222.0" promptText="ContactNumber">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </JFXTextField>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="10.0" top="10.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="43.0" prefWidth="383.0">
+                            <children>
+                                <JFXButton fx:id="back" onAction="#back" prefHeight="37.0" prefWidth="90.0" style="-fx-background-color: #d9534f;" text="Back">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <HBox.margin>
+                                        <Insets left="10.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Arial Bold" size="12.0" />
+                                    </font>
+                                </JFXButton>
+                                <TextField disable="true" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS" />
+                                <JFXButton fx:id="register" onAction="#Update" prefHeight="37.0" prefWidth="90.0" style="-fx-background-color: #5cb85c;" text="Update">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <font>
+                                        <Font name="Arial Bold" size="12.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets right="10.0" />
+                                    </HBox.margin>
+                                </JFXButton>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="10.0" top="10.0" />
+                            </VBox.margin>
+                        </HBox>
+                    </children>
+                    <HBox.margin>
+                        <Insets bottom="20.0" top="30.0" />
+                    </HBox.margin>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</VBox>

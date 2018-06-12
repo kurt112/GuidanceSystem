@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorPane" prefHeight="551.0" prefWidth="551.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GuidandanceRecord.Login.LoginUserName">
+
+      <StackPane layoutX="184.0" layoutY="100.0" prefHeight="550.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+            <VBox prefHeight="200.0" prefWidth="100.0">
+
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2196f3;" />
+                  <Pane prefHeight="351.0" prefWidth="800.0" style="-fx-background-color: #EDE7F6;" />
+
+            </VBox>
+            <AnchorPane prefHeight="558.0" prefWidth="658.0" style="-fx-background-color: transparent;">
+
+                  <AnchorPane layoutX="41.0" layoutY="61.0" prefHeight="430.0" prefWidth="469.0" style="-fx-background-color: WHITE; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0), 6.0, 0.7, 0.0,1.5); -fx-background-radius: 4; -fx-border-radius: 4; -fx-padding: 8;">
+                     <ImageView fitHeight="169.0" fitWidth="238.0" layoutX="150.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+                           <Image url="@../Pictures/received_1446285878811996.jpeg" />
+                     </ImageView>
+                     <JFXTextField fx:id="user" labelFloat="true" layoutX="76.0" layoutY="258.0" maxWidth="316.0" minWidth="233.0" onKeyPressed="#Enter" onKeyReleased="#inputs" prefHeight="31.0" prefWidth="316.0" promptText="Enter UserName">
+                        <font>
+                           <Font name="Roboto Medium" size="14.0" />
+                        </font>
+                     </JFXTextField>
+                     <JFXButton fx:id="Next" buttonType="RAISED" disable="true" layoutX="342.0" layoutY="347.0" onAction="#Next" prefHeight="41.0" prefWidth="100.0" style="-fx-background-color: #2196f3;" text="Next" textFill="WHITE">
+                        <cursor>
+                           <Cursor fx:constant="HAND" />
+                        </cursor>
+                        <font>
+                           <Font name="Arial Bold" size="17.0" />
+                        </font>
+                     </JFXButton>
+                     <VBox layoutX="14.0" prefHeight="66.0" prefWidth="439.0">
+
+                           <Label alignment="CENTER" prefHeight="34.0" prefWidth="439.0" style="-fx-text-fill: black;" text="SCHOOL GUIDANCE COMPUTERIZED RECORD SYSTEM" textAlignment="CENTER">
+                              <font>
+                                 <Font name="Aharoni Bold" size="16.0" />
+                              </font>
+                           </Label>
+                           <Label alignment="CENTER" prefHeight="32.0" prefWidth="559.0" style="-fx-text-fill: black;" text="OF BALANTI ELEMENTARY SCHOOL" textAlignment="CENTER">
+                              <font>
+                                 <Font name="Aharoni Bold" size="16.0" />
+                              </font>
+                           </Label>
+
+                     </VBox>
+                     <Hyperlink fx:id="register" layoutX="66.0" layoutY="355.0" onAction="#register" prefHeight="16.0" prefWidth="122.0" text="Register">
+                        <font>
+                           <Font name="Arial" size="15.0" />
+                        </font>
+                        <cursor>
+                           <Cursor fx:constant="HAND" />
+                        </cursor>
+                     </Hyperlink>
+                     <Label fx:id="errors" layoutX="218.0" layoutY="298.0" prefHeight="17.0" prefWidth="170.0" text="Error UserName Cannot Found" textFill="RED" visible="false" />
+            <JFXCheckBox fx:id="Admin" layoutX="76.0" layoutY="315.0" text="Login as a Admin" />
+                  </AnchorPane>
+
+               <!--<cursor>
+                  <Cursor fx:constant="S_RESIZE" />
+                           </cursor>-->
+            </AnchorPane>
+
+      </StackPane>
+
+</AnchorPane>

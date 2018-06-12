@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="GuidandanceRecord.Student.Body.AfterLogin"
+      prefHeight="400.0" prefWidth="600.0">
+
+            <Pane prefHeight="467.0" prefWidth="223.0" style="-fx-background-color: white;">
+                <children>
+                    <ImageView fitHeight="34.0" fitWidth="38.0" layoutX="95.0" layoutY="4.0" onMouseClicked="#downArrow" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../../Pictures/up.png" />
+                        </image>
+                        <cursor>
+                            <Cursor fx:constant="HAND" />
+                        </cursor>
+                    </ImageView>
+                    <Pane layoutX="12.0" layoutY="43.0" prefHeight="34.0" prefWidth="200.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0), 6.0, 0.7, 0.0,1.5);">
+                        <children>
+                            <Label layoutY="4.0" text="Bully">
+                                <font>
+                                    <Font size="17.0" />
+                                </font>
+                            </Label>
+                            <GridPane layoutX="65.0" layoutY="1.0" prefHeight="31.0" prefWidth="129.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="99.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="95.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                <children>
+
+                                    <JFXRadioButton fx:id="One" disable="true" />
+                                    <JFXRadioButton fx:id="Two" disable="true" GridPane.columnIndex="1" />
+                                    <JFXRadioButton fx:id="Three" disable="true" GridPane.columnIndex="2" />
+
+                                </children>
+                            </GridPane>
+                        </children>
+                    </Pane>
+                    <Pane layoutX="13.0" layoutY="90.0" prefHeight="34.0" prefWidth="200.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0), 6.0, 0.7, 0.0,1.5);">
+                        <children>
+                            <Label layoutY="4.0" text="Cutting">
+                                <font>
+                                    <Font size="17.0" />
+                                </font>
+                            </Label>
+                            <GridPane layoutX="65.0" layoutY="1.0" prefHeight="31.0" prefWidth="129.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="99.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="95.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                <children>
+                                    <JFXRadioButton fx:id="One1" disable="true" />
+                                    <JFXRadioButton fx:id="Two1" disable="true" GridPane.columnIndex="1" />
+                                    <JFXRadioButton fx:id="Three1" disable="true" GridPane.columnIndex="2" />
+                                </children>
+                            </GridPane>
+                        </children>
+                    </Pane>
+                    <Pane layoutX="12.0" layoutY="138.0" prefHeight="34.0" prefWidth="200.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0), 6.0, 0.7, 0.0,1.5);">
+                        <children>
+                            <Label layoutX="1.0" layoutY="4.0" text="Vandalism">
+                                <font>
+                                    <Font size="17.0" />
+                                </font>
+                            </Label>
+                            <GridPane layoutX="65.0" layoutY="1.0" prefHeight="31.0" prefWidth="129.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="99.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="95.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                <children>
+                                    <JFXRadioButton fx:id="One2" disable="true" />
+                                    <JFXRadioButton fx:id="Two2" disable="true" GridPane.columnIndex="1" />
+                                    <JFXRadioButton fx:id="Three2" disable="true" GridPane.columnIndex="2" />
+                                </children>
+                            </GridPane>
+                        </children>
+                    </Pane>
+                    <Pane layoutX="12.0" layoutY="186.0" prefHeight="34.0" prefWidth="200.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0), 6.0, 0.7, 0.0,1.5);">
+                        <children>
+                            <Label layoutY="4.0" text="Stealing">
+                                <font>
+                                    <Font size="17.0" />
+                                </font>
+                            </Label>
+                            <GridPane layoutX="65.0" layoutY="1.0" prefHeight="31.0" prefWidth="129.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="99.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="95.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                <children>
+                                    <JFXRadioButton fx:id="One3" disable="true" />
+                                    <JFXRadioButton fx:id="Two3" disable="true" GridPane.columnIndex="1" />
+                                    <JFXRadioButton fx:id="Three3" disable="true" GridPane.columnIndex="2" />
+                                </children>
+                            </GridPane>
+                        </children>
+                    </Pane>
+                    <Pane layoutX="12.0" layoutY="233.0" prefHeight="34.0" prefWidth="200.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0), 6.0, 0.7, 0.0,1.5);">
+                        <children>
+                            <Label layoutY="4.0" text="Disrespect">
+                                <font>
+                                    <Font size="17.0" />
+                                </font>
+                            </Label>
+                            <GridPane layoutX="65.0" layoutY="1.0" prefHeight="31.0" prefWidth="129.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="99.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="95.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                <children>
+                                    <JFXRadioButton fx:id="One4" disable="true" />
+                                    <JFXRadioButton fx:id="Two4" disable="true" GridPane.columnIndex="1" />
+                                    <JFXRadioButton fx:id="Three4" disable="true" GridPane.columnIndex="2" />
+                                </children>
+                            </GridPane>
+                        </children>
+                    </Pane>
+                    <Pane layoutX="12.0" layoutY="279.0" prefHeight="34.0" prefWidth="200.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0), 6.0, 0.7, 0.0,1.5);">
+                        <children>
+                            <Label layoutY="4.0" text="Hair">
+                                <font>
+                                    <Font size="17.0" />
+                                </font>
+                            </Label>
+                            <GridPane layoutX="65.0" layoutY="1.0" prefHeight="31.0" prefWidth="129.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="99.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="95.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                <children>
+                                    <JFXRadioButton fx:id="One5" disable="true" />
+                                    <JFXRadioButton fx:id="Two5" disable="true" GridPane.columnIndex="1" />
+                                    <JFXRadioButton fx:id="Three5" disable="true" GridPane.columnIndex="2" />
+                                </children>
+                            </GridPane>
+                        </children>
+                    </Pane>
+                    <Pane layoutX="13.0" layoutY="326.0" prefHeight="34.0" prefWidth="200.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0), 6.0, 0.7, 0.0,1.5);">
+                        <children>
+                            <Label layoutY="4.0" text="Shouting">
+                                <font>
+                                    <Font size="17.0" />
+                                </font>
+                            </Label>
+                            <GridPane layoutX="65.0" layoutY="1.0" prefHeight="31.0" prefWidth="129.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="99.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="95.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                <children>
+                                    <JFXRadioButton fx:id="One6" disable="true" />
+                                    <JFXRadioButton fx:id="Two6" disable="true" GridPane.columnIndex="1" />
+                                    <JFXRadioButton fx:id="Three6" disable="true" GridPane.columnIndex="2" />
+                                </children>
+                            </GridPane>
+                        </children>
+                    </Pane>
+                    <Pane layoutX="12.0" layoutY="419.0" prefHeight="34.0" prefWidth="200.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0), 6.0, 0.7, 0.0,1.5);">
+                        <children>
+                            <Label layoutY="4.0" text="No ID">
+                                <font>
+                                    <Font size="17.0" />
+                                </font>
+                            </Label>
+                            <GridPane layoutX="65.0" layoutY="1.0" prefHeight="31.0" prefWidth="129.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="99.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="95.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                <children>
+                                    <JFXRadioButton fx:id="One8" disable="true" />
+                                    <JFXRadioButton fx:id="Two8" disable="true" GridPane.columnIndex="1" />
+                                    <JFXRadioButton fx:id="Three8" disable="true" GridPane.columnIndex="2" />
+                                </children>
+                            </GridPane>
+                        </children>
+                    </Pane>
+                    <Pane prefHeight="34.0" prefWidth="200.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0), 6.0, 0.7, 0.0,1.5);">
+                        <children>
+                            <Label layoutY="4.0" text="Bad Word">
+                                <font>
+                                    <Font size="17.0" />
+                                </font>
+                            </Label>
+                            <GridPane layoutX="65.0" layoutY="1.0" prefHeight="31.0" prefWidth="129.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="99.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="95.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                <children>
+                                    <JFXRadioButton fx:id="One7" disable="true" />
+                                    <JFXRadioButton fx:id="Two7" disable="true" GridPane.columnIndex="1" />
+                                    <JFXRadioButton fx:id="Three7" disable="true" GridPane.columnIndex="2" />
+                                </children>
+                            </GridPane>
+                        </children>
+                    </Pane>
+                </children>
+            </Pane>
+        <padding>
+            <Insets left="2.0" />
+        </padding>
+</VBox>
